@@ -1,0 +1,33 @@
+{
+    "name": "writingink/wp-import",
+    "description": "Easy commands to import Wordpress tables to Wink.",
+    "keywords": ["wink", "wordpress", "laravel", "blog"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diaa Fares",
+            "email": "diaafares@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "illuminate/support": "~5.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Wink\\WpImport": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wink\\WpImport\\WinkWpImportServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
